@@ -10,15 +10,16 @@ import { Folder, Calendar, Users, BriefcaseBusiness, Info, IdCard } from "lucide
 
 const SideBar = () => {
   return (
-    <div className='h-[100vh] w-56 pl-2 bg-theme-1 pr-4 text-white flex flex-col justify-between'>
-      <div>
-        <div className='pb-[20px]  flex justify-between  pt-[20px]'>
-          <span className='text-2xl'><img src='/logo-fond-vert.png' height={80} width={80} alt="Logo" /></span>
-          <LuPanelLeft size={30} />
+    <div className='h-[100vh] w-56  bg-theme-1  text-white flex flex-col justify-between'>
+      <div >
+        <div className='pb-[10px]  flex justify-between  pt-[20px]  pr-[10px]'>
+          <span className='text-2xl'>
+            <img src='/logo-fond-vert.png' height={80} width={80} alt="Logo" /></span>
+          <LuPanelLeft size={30}  />
+        
         </div>
-        <div className='flex items-start h-0.5 bg-white'></div>
-        <div className='pl-4 mt-[16px]'>
-
+        <div className='min-h-[1px] bg-white'></div>
+        <div  className='pl-4 mt-[16px]'>
           <Link label="Tableau de bord" size={15} Icon={PiGaugeBold} />
           <Link label="Mail inbox" size={15} Icon={MdOutlineMail} />
           <Link label="Calendrier" size={15} Icon={Calendar} />

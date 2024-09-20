@@ -1,5 +1,4 @@
 import React from 'react'
-
  type  SideBarProps={
      label?:string;
     size?:number;
@@ -14,4 +13,4 @@ import React from 'react'
     </div>
   )
 }
-export default Link
+export default Link;
