@@ -18,6 +18,7 @@ const SideBar = () => {
         </div>
         <div className='flex items-start h-0.5 bg-white'></div>
         <div className='pl-4 mt-[16px]'>
+            
           <Link label="Tableau de bord" size={15} Icon={PiGaugeBold} />
           <Link label="Mail inbox" size={15} Icon={MdOutlineMail} />
           <Link label="Calendrier" size={15} Icon={Calendar} />
