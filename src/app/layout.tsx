@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Poppins} from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
+import SideBar from "@/components/SideBar";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -21,16 +22,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-poppins`} >
+      <body className={`${poppins.variable} font-poppins flex`} >
 
         <div>
 
-          {/* component Sibedar */}
+        <SideBar/>
 
         </div>
 
         <div className="flex flex-col">
+          
           <NavBar />
+      
           {children}
         </div>
 
