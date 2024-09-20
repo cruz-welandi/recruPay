@@ -10,15 +10,16 @@ import { Folder, Calendar, Users, BriefcaseBusiness, Info, IdCard } from "lucide
 
 const SideBar = () => {
   return (
-    <div className='h-[100vh] w-56 bg-theme-1 text-white flex flex-col justify-between'>
-      <div>
-        <div className='pb-[20px] pl-2 flex justify-between pr-4 pt-[20px]'>
-          <span className='text-2xl'><img src='/logo-fond-vert.png' height={80} width={80} alt="Logo" /></span>
-          <LuPanelLeft size={30} />
+    <div className='h-[100vh] w-56  bg-theme-1  text-white flex flex-col justify-between'>
+      <div >
+        <div className='pb-[10px]  flex justify-between  pt-[20px]  pr-[10px]'>
+          <span className='text-2xl'>
+            <img src='/logo-fond-vert.png' height={80} width={80} alt="Logo" /></span>
+          <LuPanelLeft size={30}  />
+        
         </div>
-        <div className='flex items-start h-0.5 bg-white'></div>
-        <div className='pl-4 mt-[16px]'>
-            
+        <div className='min-h-[1px] bg-white'></div>
+        <div  className='pl-4 mt-[16px]'>
           <Link label="Tableau de bord" size={15} Icon={PiGaugeBold} />
           <Link label="Mail inbox" size={15} Icon={MdOutlineMail} />
           <Link label="Calendrier" size={15} Icon={Calendar} />
@@ -32,9 +33,9 @@ const SideBar = () => {
           <Link label="Employés" size={15} Icon={IdCard} />
         </div>
       </div>
-      <div className='pt-[20px] pb-5'>
+      <div className='pt-[20px]  pl-5 pb-5'>
         <p className='text-sm'>Besoin d'aide</p>
-        <span className='text-gray-500 text-sm'>Ouvrez votre centre d'aide</span>
+        <span className='text-gray-500 text-sm text-nowrap '>Ouvrez votre centre d'aide</span>
       </div>
     </div>
   );
