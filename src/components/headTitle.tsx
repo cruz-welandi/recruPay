@@ -7,7 +7,7 @@ type headTitle = {
 
 const HeadTitle: React.FC<headTitle> = ({label, size}) => {
   return (
-    <h1 className={`font-bold text-background`} style={{fontSize: size? size : 40}}>
+    <h1 className={`text-theme-1`} style={{fontSize: size? size : 40}}>
         {label}
     </h1>
   )
