@@ -13,7 +13,7 @@ import {
 
 export default function NotificationButton() {
     return (
-        <div>
+        <div className=''>
             <Sheet>
                 <SheetTrigger  className="bg-[#ebebeb] rounded-full h-20 w-20 items-center flex justify-center">
                     <IoNotificationsOutline color='black' size={32} />
