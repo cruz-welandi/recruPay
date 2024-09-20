@@ -8,6 +8,8 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { ChevronsUpDown } from 'lucide-react'
+import Search from './Search'
+import Organization from './Organization'
 
 
 export default function SwitchCompanny() {
@@ -33,13 +35,21 @@ export default function SwitchCompanny() {
 
 
 
-        <DialogContent>
+        <DialogContent className=''>
           <DialogHeader>
-            <DialogTitle>Are you absolutely sure?</DialogTitle>
+            <DialogTitle>Mes organisations</DialogTitle>
             <DialogDescription>
-              This action cannot be undone. This will permanently delete your account
-              and remove your data from our servers.
+              Liste des entreprises dont vous gerer le recrutement
             </DialogDescription>
+
+            <div className='py-6'>
+              <Search/>
+            </div>
+
+            <div>
+              <Organization/>
+            </div>
+
           </DialogHeader>
         </DialogContent>
       </Dialog>
