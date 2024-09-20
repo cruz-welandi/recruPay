@@ -13,7 +13,7 @@ import { BsFillBriefcaseFill } from "react-icons/bs";
 
 const   SideBar=() =>{
   return (
-    <div className='h-[100vh]  w-56 bg-background text-white'>
+    <div className='h-[100vh]  w-56 bg-theme-1 text-white'>
        <div  className='pb-[20px] pl-5 flex  justify-between pr-4  pt-[20px]'>
         <span className=' text-2xl'>recru   </span> <LuPanelLeft size={30}/> 
        </div>
