@@ -12,8 +12,8 @@ const SideBar = () => {
   return (
     <div className='h-[100vh] w-56 bg-theme-1 text-white flex flex-col justify-between'>
       <div>
-        <div className='pb-[20px] pl-5 flex justify-between pr-4 pt-[20px]'>
-          <span className='text-2xl'><img src='/logo-fond-vert.png' alt="Logo" /></span>
+        <div className='pb-[20px] pl-2 flex justify-between pr-4 pt-[20px]'>
+          <span className='text-2xl'><img src='/logo-fond-vert.png' height={80} width={80} alt="Logo" /></span>
           <LuPanelLeft size={30} />
         </div>
         <div className='flex items-start h-0.5 bg-white'></div>
