@@ -51,8 +51,8 @@ const config: Config = {
 					'5': 'hsl(var(--chart-5))'
 				},
 				theme: {
-					'1': 'hsl(var(--theme-1))',
-					'2': 'hsl(var(--theme-2))'
+					'1': "var(--theme-1)",
+					'2': 'var(--theme-2)'
 				}
 			},
 			fontFamily: {
