@@ -22,18 +22,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.variable} font-poppins`} >
+      <body className={`${poppins.variable} font-poppins flex`} >
 
         <div>
 
-          {/* component Sibedar */}
+        <SideBar/>
 
         </div>
 
         <div className="flex flex-col">
           
           <NavBar />
-          <SideBar/>
+      
           {children}
         </div>
 
