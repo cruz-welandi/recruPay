@@ -8,7 +8,7 @@ export default function ProfilLink() {
     <div className="">
 
       <Link href={"/"}>
-        <MdAccountCircle className='h-20 w-20' />
+        <MdAccountCircle className='h-full w-[80px]' />
       </Link>
     </div>
 

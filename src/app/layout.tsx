@@ -26,12 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex`} >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
 
         <div>
+
           {/* component Sibedar */}
+
         </div>
-        
+
         <div className="flex flex-col">
           <NavBar />
           {children}
