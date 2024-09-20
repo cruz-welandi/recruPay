@@ -18,7 +18,7 @@ const SideBar = () => {
         </div>
         <div className='flex items-start h-0.5 bg-white'></div>
         <div className='pl-4 mt-[16px]'>
-            
+
           <Link label="Tableau de bord" size={15} Icon={PiGaugeBold} />
           <Link label="Mail inbox" size={15} Icon={MdOutlineMail} />
           <Link label="Calendrier" size={15} Icon={Calendar} />
@@ -32,7 +32,7 @@ const SideBar = () => {
           <Link label="Employés" size={15} Icon={IdCard} />
         </div>
       </div>
-      <div className='pt-[20px] pb-5'>
+      <div className='pt-[20px]  pl-5 pb-5'>
         <p className='text-sm'>Besoin d'aide</p>
         <span className='text-gray-500 text-sm'>Ouvrez votre centre d'aide</span>
       </div>
