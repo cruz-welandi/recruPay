@@ -16,8 +16,8 @@ export default function NotificationButton() {
         <div>
             <Sheet>
                 <SheetTrigger>
-                    <Button className="bg-gray-200 rounded-full h-20 w-20">
-                        <IoNotificationsOutline size={32} />
+                    <Button className="bg-[#ebebeb] rounded-full h-20 w-20">
+                        <IoNotificationsOutline color='black' size={32} />
                     </Button>
                 </SheetTrigger>
                 <SheetContent>
