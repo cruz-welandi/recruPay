@@ -30,7 +30,7 @@ export default function RootLayout({
 
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col flex-auto ">
           
           <NavBar />
       

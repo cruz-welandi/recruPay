@@ -5,7 +5,7 @@ import { Button } from '../ui/button';
 export default function SwitchGlobal() {
   return (
     <Button className='bg-white'>
-      <FiSearch size={32} color='black'/>
+      <FiSearch size={26} color='black'/>
     </Button>
   )
 }

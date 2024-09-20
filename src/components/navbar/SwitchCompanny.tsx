@@ -17,14 +17,14 @@ export default function SwitchCompanny() {
     <div>
       <Dialog>
 
-        <DialogTrigger className='flex items-center gap-10'>
+        <DialogTrigger className='flex items-center gap-10 mt-2'>
           <div>
             <div>
-              <span className='text-gray-400 text-lg'>Votre organisation</span>
+              <span className='text-gray-400 text-md'>Votre organisation</span>
             </div>
 
             <div className='flex justify-start mt-1'>
-              <span className='text-xl font-black'>Samba Tech</span>
+              <span className='text-lg font-black'>Samba Tech</span>
             </div>
           </div>
 

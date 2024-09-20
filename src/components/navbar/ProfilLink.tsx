@@ -7,7 +7,7 @@ export default function ProfilLincolk() {
   return (
     <div className="">
       <Link href={"/"}>
-        <MdAccountCircle className='h-20 w-20' />
+        <MdAccountCircle className='h-12 w-12' />
       </Link>
     </div>
 
