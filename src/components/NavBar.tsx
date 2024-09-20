@@ -10,8 +10,10 @@ export default function NavBar() {
 
     <div className='flex items-center justify-between '>
 
-      <div className='flex items-center'>
+      <div className='flex items-center gap-10 px-10'>
         <SwitchCompanny />
+
+        <div className='border-r-2 h-24 '></div>
         <SwitchGlobal />
       </div>
 

@@ -15,20 +15,19 @@ export default function SwitchCompanny() {
     <div>
       <Dialog>
 
-        <DialogTrigger className='border-r-2 h-24'>
+        <DialogTrigger className='flex items-center gap-10'>
           <div>
             <div>
-              <span className='text-gray-400 text-xl'>Votre organisation</span>
+              <span className='text-gray-400 text-lg'>Votre organisation</span>
             </div>
 
-            <div>
-              <span >fgbujniug</span>
+            <div className='flex justify-start mt-1'>
+              <span className='text-xl font-black'>Samba Tech</span>
             </div>
           </div>
 
           <div>
-          <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
-
+            <ChevronsUpDown color='gray' className=" h-6 w-6 shrink-0 opacity-50" />
           </div>
         </DialogTrigger>
 
