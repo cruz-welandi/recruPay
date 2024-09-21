@@ -22,9 +22,9 @@ const organizations = [
 export default function Organization() {
     return (
         <div>
-            <div className='flex flex-col gap-y-2'>
+            <div className='flex flex-col gap-y-5'>
                 {organizations.map((item, index) => (
-                    <div key={index} className="flex items-center space-x-3 py-2 bg-[#f3f1f2] p-2 rounded-md">
+                    <div key={index} className="flex items-center space-x-3 py-2 bg-[#f3f1f2] p-2 pr-6 rounded">
 
                         {/* Logo de l'organisation */}
                         {item.logo && (
@@ -42,14 +42,14 @@ export default function Organization() {
                         </div>
 
                         {/* Icônes d'action */}
-                        <div className="flex space-x-2 items-center">
+                        <div className="flex space-x-6 items-center">
                             {item.iconTransfert && (
                                 <span className="cursor-pointer hover:text-blue-500 text-white bg-theme-1 rounded-full w-10 h-10 ">
                                     {item.iconTransfert}
                                 </span>
                             )}
                             {item.iconEdit && (
-                                <span className="cursor-pointer hover:text-green-500 text-white bg-theme-2  rounded-full w-10 h-10">
+                                <span className="cursor-pointer hover:text-green-500 text-white bg-theme-3 rounded-full w-10 h-10">
                                     {item.iconEdit}
                                 </span>
                             )}
