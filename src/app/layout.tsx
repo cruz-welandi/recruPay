@@ -24,11 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.variable} font-poppins flex`} >
 
-        <div>
-
         <SideBar/>
-
-        </div>
 
         <div className="flex flex-col flex-auto ">
           
