@@ -20,17 +20,17 @@ const SideBar = () => {
         </div>
         <div className='min-h-[1px] bg-white'></div>
         <div  className='pl-4 mt-[16px]'>
-          <Link label="Tableau de bord" size={15} Icon={PiGaugeBold} />
-          <Link label="Mail inbox" size={15} Icon={MdOutlineMail} />
-          <Link label="Calendrier" size={15} Icon={Calendar} />
+          <Link label="Tableau de bord" size={15} Icon={PiGaugeBold} link={"/"} />
+          <Link label="Mail inbox" size={15} Icon={MdOutlineMail} link={"/"} />
+          <Link label="Calendrier" size={15} Icon={Calendar} link={"/"} />
           <h1 className='text-gray-500 pt-9 text-md'>Recrutement</h1>
-          <Link label="Offres d'emplois" size={15} Icon={BriefcaseBusiness} />
-          <Link label="Candidats" size={15} Icon={Users} />
-          <Link label="Mes préférences" size={15} Icon={Folder} />
+          <Link label="Offres d'emplois" size={15} Icon={BriefcaseBusiness} link={"/"} />
+          <Link label="Candidats" size={15} Icon={Users}  link={"/"}/>
+          <Link label="Mes préférences" size={15} Icon={Folder} link={"/"} />
           <h1 className='text-gray-500 pt-6 text-md'>Organisation</h1>
-          <Link label="À propos de nous" size={15} Icon={Info} />
-          <Link label="Département" size={15} Icon={MdInfo} />
-          <Link label="Employés" size={15} Icon={IdCard} />
+          <Link label="À propos de nous" size={15} Icon={Info}  link={"/"}/>
+          <Link label="Département" size={15} Icon={MdInfo} link={"/"} />
+          <Link label="Employés" size={15} Icon={IdCard}  link={"/"}/>
         </div>
       </div>
       <div className='pt-[20px]  pl-5 pb-5'>
