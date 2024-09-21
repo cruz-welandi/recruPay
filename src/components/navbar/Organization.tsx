@@ -1,5 +1,5 @@
 import React from 'react';
-import { TbTransfer } from "react-icons/tb";
+import { BiTransferAlt } from "react-icons/bi";
 import { FiEdit2 } from 'react-icons/fi'; 
 
 const organizations = [
@@ -7,14 +7,14 @@ const organizations = [
         logo: "/logo01.png",
         name: "Samba Tech",
         offre: '2 offres en cours',
-        iconTransfert: <TbTransfer className="h-5 w-5 text-white mt-2.5 ml-2.5" />,
+        iconTransfert: <BiTransferAlt className="h-6 w-6 text-white mt-2 ml-2" />,
         iconEdit: <FiEdit2 className="h-5 w-5 text-white mt-2 ml-3" />
     },
     {
         logo: "/logo01.png",
         name: "Ogooue Technologie",
         offre: '2 offres en cours',
-        iconTransfert: <TbTransfer className="h-5 w-5 text-white mt-2.5 ml-2.5" />,
+        iconTransfert: <BiTransferAlt className="h-6 w-6 text-white mt-2 ml-2" />,
         iconEdit: <FiEdit2 className="h-5 w-5 text-white mt-2 ml-3" />
     },
 ];
