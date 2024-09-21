@@ -8,7 +8,7 @@ import ProfilLink from './navbar/ProfilLink'
 export default function NavBar() {
   return (
 
-    <div className='flex items-center w-full justify-between py-'>
+    <div className='flex items-center w-full justify-between shadow-md'>
 
       <div className='flex items-center gap-10 px-10'>
         <SwitchCompanny />

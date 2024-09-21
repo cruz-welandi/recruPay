@@ -1,20 +1,21 @@
 import React from 'react';
-import { FiEdit2, FiRefreshCw } from 'react-icons/fi'; 
+import { TbTransfer } from "react-icons/tb";
+import { FiEdit2 } from 'react-icons/fi'; 
 
 const organizations = [
     {
         logo: "/logo01.png",
         name: "Samba Tech",
         offre: '2 offres en cours',
-        iconTransfert: <FiRefreshCw className="h-5 w-5 text-white" />,
-        iconEdit: <FiEdit2 className="h-5 w-5 text-white" />
+        iconTransfert: <TbTransfer className="h-5 w-5 text-white mt-2.5 ml-2.5" />,
+        iconEdit: <FiEdit2 className="h-5 w-5 text-white mt-2 ml-3" />
     },
     {
         logo: "/logo01.png",
         name: "Ogooue Technologie",
         offre: '2 offres en cours',
-        iconTransfert: <FiRefreshCw className="h-5 w-5 text-white" />,
-        iconEdit: <FiEdit2 className="h-5 w-5 text-white" />
+        iconTransfert: <TbTransfer className="h-5 w-5 text-white mt-2.5 ml-2.5" />,
+        iconEdit: <FiEdit2 className="h-5 w-5 text-white mt-2 ml-3" />
     },
 ];
 
@@ -43,12 +44,12 @@ export default function Organization() {
                         {/* Icônes d'action */}
                         <div className="flex space-x-2 items-center">
                             {item.iconTransfert && (
-                                <span className="cursor-pointer hover:text-blue-500 text-white bg-[#fa9938] rounded-full w-10 h-10 ">
+                                <span className="cursor-pointer hover:text-blue-500 text-white bg-theme-1 rounded-full w-10 h-10 ">
                                     {item.iconTransfert}
                                 </span>
                             )}
                             {item.iconEdit && (
-                                <span className="cursor-pointer hover:text-green-500 text-white bg-[#0c2c2b]  rounded-full w-10 h-10">
+                                <span className="cursor-pointer hover:text-green-500 text-white bg-theme-2  rounded-full w-10 h-10">
                                     {item.iconEdit}
                                 </span>
                             )}
