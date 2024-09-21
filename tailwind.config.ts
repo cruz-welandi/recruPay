@@ -52,7 +52,8 @@ const config: Config = {
 				},
 				theme: {
 					'1': "var(--theme-1)",
-					'2': 'var(--theme-2)'
+					'2': 'var(--theme-2)',
+					'3': 'var(--theme-3)'
 				}
 			},
 			fontFamily: {

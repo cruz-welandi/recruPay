@@ -19,7 +19,7 @@ export default function SwitchCompanny() {
     <div>
       <Dialog>
 
-        <DialogTrigger className='flex items-center gap-10 mt-2'>
+        <DialogTrigger className='flex items-center gap-28 py-1.5'>
           <div>
             <div>
               <span className='text-gray-400 text-md'>Votre organisation</span>
@@ -41,16 +41,14 @@ export default function SwitchCompanny() {
           <DialogHeader>
 
             <div className='flex items-center justify-between'>
-              <DialogTitle>Mes organisations</DialogTitle>
+              <DialogTitle className='text-2xl'>Mes organisations</DialogTitle>
               <Button className='bg-theme-2 gap-2 items-center font-black'>
                 <MdAddCircle size={20} className='' />
                 AJOUTER
               </Button>
             </div>
 
-
-
-            <DialogDescription>
+            <DialogDescription className=''>
               Liste des entreprises dont vous gerer le recrutement 
             </DialogDescription>
 

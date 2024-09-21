@@ -8,18 +8,18 @@ import ProfilLink from './navbar/ProfilLink'
 export default function NavBar() {
   return (
 
-    <div className='flex items-center w-full justify-between shadow-md'>
+    <div className='flex items-center w-full justify-between shadow-md '>
 
-      <div className='flex items-center gap-10 px-10'>
+      <div className='flex items-center gap-6 px-10 '>
         <SwitchCompanny />
 
-        <div className='border-r-2 h-16'></div>
+        <div className='border-r-2 h-[75px] '></div>
 
         <SwitchGlobal />
 
       </div>
 
-      <div className='flex gap-4 items-center mr-3'>
+      <div className='flex gap-4 items-center mr-3 py-1'>
         <ButtonAdd />
         <NotificationButton />
         <ProfilLink />
