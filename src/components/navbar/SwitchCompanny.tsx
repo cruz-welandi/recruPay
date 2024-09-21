@@ -10,6 +10,8 @@ import {
 import { ChevronsUpDown } from 'lucide-react'
 import Search from './Search'
 import Organization from './Organization'
+import { Button } from '../ui/button'
+import { MdAddCircle } from "react-icons/md";
 
 
 export default function SwitchCompanny() {
@@ -37,17 +39,27 @@ export default function SwitchCompanny() {
 
         <DialogContent className=''>
           <DialogHeader>
-            <DialogTitle>Mes organisations</DialogTitle>
+
+            <div className='flex items-center justify-between'>
+              <DialogTitle>Mes organisations</DialogTitle>
+              <Button className='bg-theme-2 gap-2 items-center font-black'>
+                <MdAddCircle size={20} className='' />
+                AJOUTER
+              </Button>
+            </div>
+
+
+
             <DialogDescription>
-              Liste des entreprises dont vous gerer le recrutement
+              Liste des entreprises dont vous gerer le recrutement 
             </DialogDescription>
 
             <div className='py-6'>
-              <Search/>
+              <Search />
             </div>
 
             <div>
-              <Organization/>
+              <Organization />
             </div>
 
           </DialogHeader>
