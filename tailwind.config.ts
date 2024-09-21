@@ -58,6 +58,7 @@ const config: Config = {
 			},
 			fontFamily: {
 				poppins: ["var(--font-poppins)"],
+				openSans: ["var(--font-ubuntu)"]
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
