@@ -1,18 +1,15 @@
 import React from 'react';
 import {Card} from '@/components/ui/card';
+import { cn } from '@/lib/utils';
 
 type Section ={
-    titre: string,
-    lien?: string,
     children: React.ReactNode,
-    buttonAction?: ()=> void,
     className?: string
 }
 
-const Section: React.FC<Section> = ({titre, lien, children, buttonAction, className}) => {
+const Section: React.FC<Section> = ({children, className}) => {
   return (
-    <Card>
-        
+    <Card className={cn(className, 'bg-white')}>
         {children}
     </Card>
   )
