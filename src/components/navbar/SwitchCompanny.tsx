@@ -19,7 +19,7 @@ export default function SwitchCompanny() {
     <div>
       <Dialog>
 
-        <DialogTrigger className='flex items-center gap-28 py-1.5'>
+        <DialogTrigger className='flex items-center gap-28'>
           <div>
             <div>
               <span className='text-gray-400 text-md'>Votre organisation</span>
