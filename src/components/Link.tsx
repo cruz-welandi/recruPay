@@ -1,4 +1,4 @@
-'use client'; // Ajoutez ceci pour indiquer que c'est un Client Component
+'use client'; 
 
 import { useRouter } from 'next/navigation';
 import React from 'react';

@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${poppins.variable} ${ubuntu.variable} font-poppins flex`} >
+      <body className={` ${poppins.variable} ${ubuntu.variable} font-poppins flex bg-[#f3f1f1]`} >
 
         <SideBar/>
 

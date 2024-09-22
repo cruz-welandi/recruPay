@@ -3,7 +3,6 @@ import React from 'react';
 import Link from './Link';
 import { MdOutlineMail, MdInfo } from "react-icons/md";
 import { PiGaugeBold } from "react-icons/pi";
-
 import { Folder, Calendar, Users, BriefcaseBusiness, Info, IdCard, CircleHelp ,PanelLeft} from "lucide-react";
 
 const SideBar = () => {
@@ -32,7 +31,7 @@ const SideBar = () => {
                 </div>
             </div>
             {/* Sidebar Section */}
-            <div className={`h-[90vh] ${isExpanded ? 'w-56' : 'w-16'} bg-theme-1  text-white flex flex-col justify-between transition-all duration-300 `}>
+            <div className={`h-[90vh] ${isExpanded ? 'w-56' : 'w-16 '} bg-theme-1  text-white flex flex-col justify-between transition-all duration-300 `}>
                 <div>
                     <div className='min-h-[1px] bg-white'></div>
                     <div className=' pt-6 pl-3 pr-4  cursor-pointer'>
@@ -53,7 +52,7 @@ const SideBar = () => {
                                 <Link label="Employés" size={15} Icon={IdCard} link={"/Employés"} />
                             </>
                         ) : (
-                            <>
+                            <div className='w-12  '>
                                 <Link label="" size={15} Icon={PiGaugeBold} link={"/"} />
                                 <Link label="" size={15} Icon={MdOutlineMail} link={"/Mailinbox"} />
                                 <Link label="" size={15} Icon={Calendar} link={"/Calendrier"} />
@@ -68,17 +67,17 @@ const SideBar = () => {
                                     <Link label="" size={15} Icon={MdInfo} link={"/Département"} />
                                     <Link label="" size={15} Icon={IdCard} link={"/Employés"} />
                                 </div>
-                            </>
+                            </div>
                         )}
                     </div>
                 </div>
-                <div className=' pr-5'>
+                <div className='  cursor-pointer '>
                  { isExpanded ?(
                     <div>
                          <Link label="Besoin d'aide" size={15} link={"/Àproposdenous"} Icon={'symbol'} />
                         <p className='text-sm font-thin text-gray-500 px-5 text-nowrap'>Ouvrez votre centre d'aide</p>
                     </div>
-                 ): <div className='pl-2 '>
+                 ): <div className=' pl-2'>
                      <Link label="" size={15} link={"/Àproposdenous"} Icon={CircleHelp} />
                      <Link label=""    link={"/Àproposdenous"} Icon={'symbol'} />
                  </div>
