@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import {Poppins} from "next/font/google";
-import {Ubuntu} from "next/font/google";
+import { Poppins } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import SideBar from "@/components/SideBar";
@@ -29,16 +29,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${poppins.variable} ${ubuntu.variable} font-poppins flex bg-[#f3f1f1]`} >
+      <body className={`${poppins.variable} ${ubuntu.variable} font-poppins`} >
+        <NavBar />
 
-        <SideBar/>
-
-        <div className="flex flex-col flex-auto ">
-          
-          <NavBar />
-          <div className="bg-[#f3f1f1] h-[89.7vh] w-full">
-            {children}
-          </div>
+        <div className="flex flex-auto bg-[#f3f1f1] h-[89.7vh] w-full">
+          <SideBar />
+          {children}
         </div>
 
       </body>
