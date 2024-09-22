@@ -44,18 +44,18 @@ setLinkSelected(link)
                                 <Link label="Mail inbox" size={13} Icon={MdOutlineMail} link={"/mail"} selected={linkSelected==="/mail"}  onclick={handleClick} />
                                 <Link label="Calendrier" size={13} Icon={Calendar} link={"/Calendrier"}selected={linkSelected==="/Calendrier"}  onclick={handleClick} />
                                 </div>
-                                <div className='pt-9 pl-2'>
+                                <div className='pt-9 '>
 
                                
-                                <h1 className='text-gray-500  text-md'>Recrutement</h1>
+                                <h1 className='text-gray-500 pl-2  text-md'>Recrutement</h1>
                                 <Link label="Offres d'emplois" size={13} Icon={BriefcaseBusiness} link={"/Offresdemplois"}  selected={linkSelected==="/Offresdemplois"}  onclick={handleClick}/>
                                 <Link label="Candidats" size={13} Icon={Users} link={"/Candidats"} selected={linkSelected==="/Candidats"}  onclick={handleClick} />
                                 <Link label="Mes préférences" size={13} Icon={Folder} link={"/Mespréférences"} selected={linkSelected==="/Mespréférences"}  onclick={handleClick} />
                                 </div>
-                                <div className='pl-2 pt-[19px] text-md'>
+                                <div className=' pt-[19px] text-md'>
 
                                
-                                <h1 className='text-gray-500'>Organisation</h1>
+                                <h1 className=' pl-2 text-gray-500'>Organisation</h1>
                                 <Link label="À propos de nous" size={13} Icon={Info} link={"/Àproposdenous"} selected={linkSelected==="/Àproposdenous"}  onclick={handleClick}/>
                                 <Link label="Département" size={13} Icon={MdInfo} link={"/Département"} selected={linkSelected==="/Département"}  onclick={handleClick} />
                                 <Link label="Employés" size={13} Icon={IdCard} link={"/Employés"}  selected={linkSelected==="/Employés"}  onclick={handleClick}/>
