@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={` ${poppins.variable} ${ubuntu.variable} font-poppins flex bg-[#f3f1f1]`} >
 
-        <SideBar/>
+        {/* <SideBar/> */}
 
         <div className="flex flex-auto bg-[#f3f1f1] h-[89.7vh] w-full">
           <SideBar />
