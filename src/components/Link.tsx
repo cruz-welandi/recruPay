@@ -1,5 +1,5 @@
 'use client'; 
-import { useRouter } from 'next/navigation';
+import { useSideBarStore } from '@/store/storeSideBar';
 import React from 'react';
 
 type SideBarProps = {
@@ -13,20 +13,18 @@ type SideBarProps = {
 };
 
 const Link: React.FC<SideBarProps> = ({ label, size, Icon, link ,selected,onclick}) => {
-    const router = useRouter();
-
-    
+    const isExpanded = useSideBarStore((state) => state.expanded);
 
 
     return (
         <div
             onClick={()=>onclick(link)}
-            className={`pt-[12px] pl-2 flex gap-4 items-center text-white text-md rounded-sm pb-2 ${selected ? 'bg-theme-2' : ''}`}
+            className={`flex gap-4 text-white text-md rounded-sm  py-1.5 px-4 ${selected && !isExpanded ? 'bg-theme-2' : ''}`}
         >
-            <Icon size={15} />
+            <Icon size={19} />
             <button style={{ fontSize: size ? size : 8 }}>
                 {label}
-            </button>
+            </span>
         </div> 
     );
 };
