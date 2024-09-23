@@ -1,23 +1,26 @@
 'use client';
 import React from 'react';
 import Link from './Link';
-import { MdOutlineMail, MdInfo } from "react-icons/md";
+import { MdOutlineMail } from "react-icons/md";
 import { PiGaugeBold } from "react-icons/pi";
+import { RiOrganizationChart } from "react-icons/ri";
 import { Folder, Calendar, Users, BriefcaseBusiness, Info, IdCard, CircleHelp, PanelLeft } from "lucide-react";
 import { useSideBarStore } from '@/store/storeSideBar';
+import { useRouter } from 'next/navigation';
 
 const SideBar = () => {
     const isExpanded = useSideBarStore((state) => state.expanded);
+    const router= useRouter()
     const [linkSelected, setLinkSelected] = React.useState("");
-
-
     const handleClick = (link: any) => {
+       
         setLinkSelected(link)
+         router.push(link)
     }
     return (
         <div className='h-[89.7vh] bg-[#f3f1f1]'>
             {/* Sidebar Section */}
-            <div className={`${!isExpanded ? 'w-56' : 'w-16 '} text-white h-full bg-theme-1 flex flex-col justify-between transition-all duration-300 flex-2 py-4`}>
+            <div className={`${!isExpanded ? 'w-56' : 'w-16 '} text-white h-full bg-theme-1 flex flex-col justify-between  flex-2 py-4`}>
 
                 <div className='cursor-pointer flex flex-col gap-y-8 items-center'>
                     <div className='flex-2 flex flex-col gap-y-3 sticky items-start'>
@@ -34,20 +37,20 @@ const SideBar = () => {
                     <div className='flex-2 flex flex-col gap-y-3 sticky items-start'>
                         <h1 className={`text-gray-500 text-md px-4`}> {isExpanded?'': 'Organisation'}</h1>
                         <Link label="À propos de nous" size={15} Icon={Info} link={"/Àproposdenous"} selected={linkSelected === "/Àproposdenous"} onclick={handleClick} />
-                        <Link label="Département" size={15} Icon={MdInfo} link={"/Département"} selected={linkSelected === "/Département"} onclick={handleClick} />
+                        <Link label="Département" size={15} Icon={RiOrganizationChart} link={"/Département"} selected={linkSelected === "/Département"} onclick={handleClick} />
                         <Link label="Employés" size={15} Icon={IdCard} link={"/Employés"} selected={linkSelected === "/Employés"} onclick={handleClick} />
                     </div>
                 </div>
 
                 <div className='cursor-pointer flex items-center justify-center'>
                     {!isExpanded ? (
-                        <div className='flex-2 sticky'>
-                            <Link label="Besoin d'aide" size={15} link={"/Àproposdenous"} Icon={'symbol'} selected={linkSelected === "/Àproposdenous"} onclick={handleClick} />
-                            <p className={`${isExpanded ? 'hidden' : 'text-sm font-thin text-gray-500 text-nowrap px-4'}`}>{isExpanded?'': "Ouvrez votre centre d'aide"}</p>
+                        <div className='flex-2 sticky '>
+                            <Link label="Besoin d'aide" size={15} link={"/aide"}  selected={linkSelected === "/aide"} onclick={handleClick} />
+                            <p className={`${isExpanded ? 'hidden' : 'text-sm font-thin text-gray-500 text-nowrap pl-4 '}`}>{isExpanded?'': "Ouvrez votre centre d'aide"}</p>
                         </div>
                     ) : (
                         <div className='flex-2 sticky'>
-                            <Link label="" size={15} link={"/Àproposdenous"} Icon={CircleHelp} selected={linkSelected === "/Àproposdenous"} onclick={handleClick} />
+                            <Link label="" size={15} link={"/aide"} Icon={CircleHelp} selected={linkSelected === "/aide"} onclick={handleClick} />
                         </div>
                     )}
 
